@@ -1,0 +1,152 @@
+
+.header {
+    background: #0d0d0d;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    position: relative;
+
+    img{
+      margin-bottom: 3rem;
+    }
+
+    .newTaskForm {
+        position: absolute;
+        height: 5.5vh;
+        bottom: 2vh;
+        width: 50vh;
+        max-width: 700vh;
+        display: flex;
+        gap: 8px;
+        padding: 0 1rem;
+
+        input{
+            height: 100%;
+            flex: 1;
+            color: #fff;
+            background: #262626;
+            border: none;
+            border-radius: 8px;
+            padding: 0 16px;
+            font-size: 16px;
+            outline:none;
+
+            &::placeholder{
+                color: #808080;
+            }
+        }
+
+        button {
+            height: 100%;
+            padding: 0 16px;
+            background: #1E6F9F;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 700;
+            font-size: 14px;
+
+            &:hover{
+                border: 1px white solid;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .newTaskForm {
+      display:flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-right: 0.75rem;
+      padding: 0.5rem;
+      justify-content: center;
+      bottom: -5vh;
+
+      input {
+        font-size: 14px;
+      }
+    }
+    
+  }
+  
+  @media screen and (max-width: 480px) {
+
+    .newTaskForm {
+      flex-direction: column;
+      align-items: center;
+      bottom: -8vh;
+      width: 390px !important; 
+
+      input {
+        font-size: 12px;
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 375px) {
+
+    .newTaskForm {
+      bottom: -8vh;
+      width: 400px !important;
+      gap: 3px !important;
+      margin-left: 0.75rem !important;
+
+      input {
+        font-size: 12px;
+        border-radius: 8px !important;
+      }
+  
+      button{
+        border-radius: 8px !important;
+      }
+    }
+  
+  }
+
+  @media screen and (max-width: 360px) {
+
+    .newTaskForm {
+      gap: 0.1px !important;
+      margin-left: 0.75rem !important;
+
+      input {
+        font-size: 12px;
+        border-radius: 8px !important;
+        width: 200px !important;
+      }
+  
+      button{
+        border-radius: 8px !important;
+        width: 100px;
+      }
+    }
+  
+  }
+
+  @media screen and (max-width: 280px) {
+
+    .newTaskForm {
+      bottom: -8vh;
+      gap: 1px !important;
+      width: 280px !important;
+
+      input {
+        font-size: 12px;
+        border-radius: 8px !important;
+        width: 100px !important;
+      }
+  
+      button{
+        border-radius: 8px !important;
+        width: 100px;
+      }
+    
+    }
+  }
